@@ -1,19 +1,26 @@
 import "./App.css";
-import MovieCard from "./component/MovieCard";
+import Favorite from "./pages/Favorite";
 import Home from "./pages/Home";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./component/Navbar";
+import "./css/App.css"
+
 
 function App() {
   return (
     <>
-         <Home />
 
-      <MovieCard
-        movie={{
-          title: "Avatar Way of Water",
-          release_date: "2026",
-         
-        }}
-      />
+    <div>
+      <NavBar />
+    </div>
+        <main className="main-content">
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/favorite" element={<Favorite />} />
+        </Routes>
+        </main>
+    
    
     </>
   );

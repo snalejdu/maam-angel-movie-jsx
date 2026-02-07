@@ -1,39 +1,47 @@
 .navbar {
-  background-color: #000000;
+  background-color: #ebe3e3;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(226, 226, 226, 0.1);
 }
 
-.navbar-brand {
+/* Brand */
+.navbar-brand a {
   font-size: 1.5rem;
   font-weight: bold;
+  text-decoration: none;
+  color: #000;
 }
 
+/* Links container */
 .navbar-links {
   display: flex;
   gap: 2rem;
 }
 
+/* Individual links */
 .nav-link {
   font-size: 1rem;
+  text-decoration: none;
+  color: #000;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.2s;
 }
 
 .nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;
   }
 
-  .navbar-brand {
+  .navbar-brand a {
     font-size: 1.2rem;
   }
 
